@@ -8,6 +8,7 @@ function App() {
   const [userList, setUserList] = useState([]);
 
   const addUser = (uName, uAge) => {
+
     setUserList((prevUserList) => {
       return [
         ...prevUserList,
@@ -20,6 +21,8 @@ function App() {
     <div className="App">
       <AddUser onUserAdd={addUser} />
       <UserList users={userList} />
+      
+
     </div>
   );
 }
